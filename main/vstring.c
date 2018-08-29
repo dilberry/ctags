@@ -294,7 +294,7 @@ extern void vStringCatSWithEscaping (vString* b, const char *s)
 		int c = *s;
 
 		/* escape control characters (incl. \t) */
-		if ((c > 0x00 && c <= 0x1F) || c == 0x7F || c == '\\')
+		if ((c > 0x00 && c <= 0x1F) || c == 0x7F)
 		{
 			vStringPut (b, '\\');
 
